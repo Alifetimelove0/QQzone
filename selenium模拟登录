@@ -1,0 +1,13 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import by
+
+def qzone_Loing():
+  driver= webdrive.Firfox()
+  driver.get("https://qzone.qq.com/")
+  driver.maximizc_window()
+  driver.switch_to.frame("login_frame")
+  driver.find_element_by_id("switcher_plogin").click()
+  driver.find_element_by_id("u").send_keys("2389608508")
+  driver.find_element_by_id("p").send_keys("19951023+-wsj")
+  driver.find_element_by_id("login_button").click()
+  
